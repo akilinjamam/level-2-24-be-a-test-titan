@@ -38,3 +38,14 @@ it('it should provide correct sum if an array numeric string is provided', () =>
     // assertion 
     expect(result).toBe(expectedResult);
 })
+it('it should through an error if no argument passed', () => {
+
+    const resultFn = () => add();
+
+    expect(resultFn).toThrow();
+})
+
+// it('should throw an error if multiple arguments are provided', () => {
+//     const resultFn = () => add(1, 2, 3);
+//     expect(resultFn).toThrow(/is not iterable/i);
+// });
