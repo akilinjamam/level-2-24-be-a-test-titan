@@ -17,20 +17,20 @@ export function encryptMessagePromise(message, key) {
     })
 }
 
-const message = {
-    name: 'John Doe',
-    email: 'johndoe@gmail.com'
-}
+// const message = {
+//     name: 'John Doe',
+//     email: 'johndoe@gmail.com'
+// }
 
-const secretKey = 'mySecretKey';
+// const secretKey = 'mySecretKey';
 
-encryptMessage(JSON.stringify(message), secretKey, (encryptedMessage) => {
-    console.log('Encrypted message using callback:', encryptedMessage);
-});
+// encryptMessage(JSON.stringify(message), secretKey, (encryptedMessage) => {
+//     console.log('Encrypted message using callback:', encryptedMessage);
+// });
 
 
-encryptMessagePromise(JSON.stringify(message?.email), secretKey).then((encryptedMessage) => {
-    console.log('Encrypted message using Promise:', encryptedMessage);
-});
+// encryptMessagePromise(JSON.stringify(message?.email), secretKey).then((encryptedMessage) => {
+//     console.log('Encrypted message using Promise:', encryptedMessage);
+// });
 
-console.log(JSON.stringify(message));
+// console.log(JSON.stringify(message));

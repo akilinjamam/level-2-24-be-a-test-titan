@@ -1,6 +1,19 @@
-import { expect, it } from "vitest";
+import { expect, it, beforeAll, afterAll, beforeEach, afterEach } from "vitest";
 import { encryptMessage, encryptMessagePromise } from "./async";
 import CryptoJS from "crypto-js";
+
+beforeAll(() => {
+    console.log('Starting tests for async functions');
+})
+afterAll(() => {
+    console.log('Finished tests for async functions');
+})
+beforeEach(() => {
+    console.log('Starting a new test each');
+})
+afterEach(() => {
+    console.log('Finished a test each');
+})
 
 it('should encrypt a message using a callback', async () => {
     const message = 'Hello world';
