@@ -2,6 +2,7 @@
   "name": "mission-9-be-a-testing-titan",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "vitest --reporter verbose --run"
